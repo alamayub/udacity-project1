@@ -1,0 +1,61 @@
+@import './header.css';
+@import './section.css';
+@import './footer.css';
+* {
+    padding: 0px;
+    margin: 0px;
+    text-decoration: none;
+}
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.container {
+    display: grid;
+    grid-template-areas: "hd" "sc" "ft";
+    max-width: 1250px;
+    margin: 0 auto;
+    background: #fff;
+    -webkit-box-shadow: 0 0 40px 0 rgba(0,0,0,.1);
+    box-shadow: 0 0 40px 0 rgba(0,0,0,.1);
+}
+section {
+    grid-area: sc;
+    display: grid;
+    grid-template-columns: 70% 30%;
+    margin: 20px;
+}
+.section1 {
+    margin-right: 10px;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.section2 {
+    margin-left: 10px;
+}
+@media (max-width: 950px) {
+    section {
+        grid-template-columns: 100%;
+        grid-template-areas: "sc1" "sc2";
+    }
+    .section1 {
+        grid-area: sc1;
+        margin-right: 0px;
+        margin-bottom: 20px;
+    }
+    .section2 {
+        grid-area: sc2;
+        margin-left: 0px;
+    }
+}
+
+h1, h2, h3, h4 {
+    font-weight: 500;
+    line-height: 1.2;
+    transition: ease-in-out 0.3s;
+}
+h1 {
+    font-size: 50px;
+}

@@ -1,0 +1,62 @@
+@import './searchbar.css';
+header {
+    grid-area: hd;
+    display: grid;
+    grid-template-areas: 'hd1' 'hd2';
+}
+.header1 {
+    grid-area: hd1;
+    display: flex;
+    background-color: teal;
+    padding: 10px 20px;
+}
+.head11 {
+    width: 50%;
+}
+.head12 {
+    width: 50%;
+}
+@media (max-width: 650px) {
+    .header1  {
+        display: grid;
+        grid-template-areas: 'h1' 'h2';
+    }
+    .head11 {
+        grid-area: h1;
+        width: 100%;
+        text-align: center;
+    }
+    .head12 {
+        grid-area: h2;
+        width: 100%;
+        margin-top: 5px;
+    }
+}
+.head11 img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    box-shadow: 0 10px 30px -10px rgba(0,0,0,.4);
+    margin: auto 10px;
+    transition: ease-in-out 0.3s;
+}
+.head11 img:first-child {
+    margin-left: 0px;
+}
+.head11 img:hover {
+    transform: scale(1.2);
+}
+.header2 {
+    grid-area: hd2;
+    padding: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #ffffff;
+}
+h1 a {
+    color: teal;
+}
+h1:hover {
+    transform: scale(1.15);
+}

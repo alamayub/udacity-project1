@@ -1,0 +1,64 @@
+.single-post {
+    width: 100%;
+}
+.single-post h2 {
+    margin: 10px auto;   
+}
+.single-post img {
+    width: 100%;
+    height: auto;
+}
+.single-post figcaption {
+    text-align: center;
+    margin: 5px auto;
+}
+.author-info {
+    margin: 15px auto 20px auto;
+}
+.author-info h4 {
+    font-size: 25px;
+    margin-left: 20px;
+}
+
+.author-info .avatar {
+    display: flex;
+    margin: 10px 20px;
+}
+.avatar h3 {
+    line-height: 60px;
+    margin-left: 20px;
+}
+.author-info img {
+    height: 60px;
+    width: 60px;
+    border-radius: 50px;
+    box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.5);
+}
+.avatar h3, .avatar p {
+    font-size: 15px;
+    color: grey;
+}
+.avatar p {
+    margin-left: 20px;
+    line-height: 25px;
+}
+.e {
+    overflow: hidden;
+    margin-top: 17.5px;
+}
+
+@media (max-width: 650px) {
+    .e {
+        margin-top: 10px;
+    }
+}
+
+.post-info {
+    margin-top: 10px;
+}
+.post-info p {
+    letter-spacing: 1.5px;
+    color: grey;
+    line-height: 25px;
+    font-weight: 400;
+}
